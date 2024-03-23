@@ -50,6 +50,7 @@
                 <i class="ti paket ti"></i>
                 </span>
                 <span class="hide-menu">Perusahaan</span>
+
               </a>
             </li>
             <li class="sidebar-item">
