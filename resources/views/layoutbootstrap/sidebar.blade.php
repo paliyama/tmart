@@ -41,6 +41,12 @@
                   <i class="ti ti-layout"></i>
                 </span>
                 <span class="hide-menu">Perusahaan</span>
+
+              <a class="sidebar-link" href="{{ url('produk') }}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout"></i>
+                </span>
+                <span class="hide-menu">Produk</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -62,17 +68,17 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-file-description"></i>
+                  <i class="ti ti-building-factory"></i>
                 </span>
-                <span class="hide-menu">Forms</span>
+                <span class="hide-menu">Supplier</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-typography"></i>
+                  <i class="ti ti-building-bank"></i>
                 </span>
-                <span class="hide-menu">Typography</span>
+                <span class="hide-menu">Vendor</span>
               </a>
             </li>
             <li class="nav-small-cap">
@@ -82,17 +88,17 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-login"></i>
+                  <i class="ti ti-shopping-cart"></i>
                 </span>
-                <span class="hide-menu">Login</span>
+                <span class="hide-menu">Pembelian</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-user-plus"></i>
+                  <i class="ti ti-discount"></i>
                 </span>
-                <span class="hide-menu">Register</span>
+                <span class="hide-menu">Diskon</span>
               </a>
             </li>
 
@@ -103,17 +109,17 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-mood-happy"></i>
+                  <i class="ti ti-report-analytics"></i>
                 </span>
-                <span class="hide-menu">Icons</span>
+                <span class="hide-menu">Laporan Analisa</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-aperture"></i>
+                  <i class="ti ti-businessplan"></i>
                 </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Lap Keuangan</span>
               </a>
             </li>
 
@@ -124,17 +130,17 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-mood-happy"></i>
+                  <i class="ti ti-report-money"></i>
                 </span>
-                <span class="hide-menu">Icons</span>
+                <span class="hide-menu">Penjualan</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-aperture"></i>
+                  <i class="ti ti-chart-bar"></i>
                 </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Saham</span>
               </a>
             </li>
 
@@ -145,17 +151,17 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-mood-happy"></i>
+                  <i class="ti ti-report-analytics"></i>
                 </span>
-                <span class="hide-menu">Icons</span>
+                <span class="hide-menu">Laporan</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-aperture"></i>
+                  <i class="ti ti-device-analytics"></i>
                 </span>
-                <span class="hide-menu">Sample Page</span>
+                <span class="hide-menu">Device</span>
               </a>
             </li>
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tmart</title>
+  <title>T Mart</title>
   <link rel="shortcut icon" type="image/png" href="{{asset('assets/images/logos/T.png')}}" />
   <link rel="stylesheet" href="{{asset('assets/css/styles.min.css')}}" />
 
@@ -18,12 +18,14 @@
     }
   </style>
 
+
   <!-- Untuk Tambahan DataTables -->
-  <link href="{{asset('assets/libs/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">	
+  <link href="{{asset('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">	
 
   <!-- Bootstrap core JavaScript-->
-  <script src="{{asset('assets/libs/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('vendor/jquery/dist/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
   
   <!-- Untuk sweet alert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -38,5 +40,4 @@
 
   <!-- fancy box -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-
 </head>

@@ -42,15 +42,14 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">UI COMPONENTS</span>
+              <span class="hide-menu">MASTER DATA</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="{{ url('perusahaan') }}" aria-expanded="false">
+              <a class="sidebar-link" href="{{ url('produk') }}" aria-expanded="false">
                 <span>
                 <i class="ti paket ti"></i>
                 </span>
-                <span class="hide-menu">Perusahaan</span>
-
+                <span class="hide-menu">Produk</span>
               </a>
             </li>
             <li class="sidebar-item">
