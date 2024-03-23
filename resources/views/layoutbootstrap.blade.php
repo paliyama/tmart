@@ -1,6 +1,7 @@
-@include('layoutbootstrap.header')
-@include('layoutbootstrap.sidebar')
+
+@include('layoutsbootstrap.header')
+@include('layoutsbootstrap.sidebar')
 
 @yield('konten')
 
-@include('layoutbootstrap.footer')
+@include('layoutsbootstrap.footer')
