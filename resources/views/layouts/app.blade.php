@@ -33,7 +33,7 @@
               <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+              <a class="sidebar-link" href="./dashboard" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
@@ -47,7 +47,7 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="{{ url('produk') }}" aria-expanded="false">
                 <span>
-                <i class="ti paket ti"></i>
+                <i class="ti ti-package"></i>
                 </span>
                 <span class="hide-menu">Produk</span>
               <a class="sidebar-link" href="{{ url('pegawai') }}"aria-expanded="false">
@@ -58,19 +58,19 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{ url('perusahaan') }}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-alert-circle"></i>
+                  <i class="ti ti-briefcase"></i>
                 </span>
-                <span class="hide-menu">Alerts</span>
+                <span class="hide-menu">Perusahaan</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{ url('supplier') }}" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">Card</span>
+                <span class="hide-menu">Supplier</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -78,17 +78,17 @@
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Forms</span>
+                <span class="hide-menu">COA</span>
               </a>
             </li>
-            <li class="sidebar-item">
+<!--            <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
                 <span class="hide-menu">Typography</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">AUTH</span>
@@ -167,7 +167,7 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">Download Free</a>
+              <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">{{ Auth::user()->name }}</a>
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
