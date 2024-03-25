@@ -5,6 +5,7 @@ use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PerusahaanController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\COAController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -37,5 +38,9 @@ Route::get('/produk/destroy/{id}', [App\Http\Controllers\ProdukController::class
 // route ke master data pegawai
 Route::resource('/pegawai', PegawaiController::class)->middleware(['auth']);
 Route::get('/pegawai/destroy/{id}', [App\Http\Controllers\PegawaiController::class,'destroy'])->middleware(['auth']);
+
+// route ke master data coa
+Route::resource('/coa', COAController::class)->middleware(['auth']);
+Route::get('/coa/destroy/{id}', [App\Http\Controllers\COAController::class,'destroy'])->middleware(['auth']);
 
 require __DIR__.'/auth.php';

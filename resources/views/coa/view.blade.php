@@ -1,6 +1,7 @@
 @extends('layoutbootstrap')
 
 @section('konten')
+    <!--  COA VIEW -->
 <!--  Main wrapper -->
 <div class="body-wrapper">
       <!--  Header Start -->
@@ -21,7 +22,7 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">{{Auth::user()->name}}</a>
+              <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">{{ Auth::user()->name }}</a>
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -56,15 +57,15 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12">
-                  <h5 class="card-title fw-semibold mb-4">Perusahaan</h5>
+                  <h5 class="card-title fw-semibold mb-4">COA</h5>
                   <div class="card">
 
                         <!-- Card Header - Dropdown -->
                         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Master Data Perusahaan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Master Data COA</h6>
                             
                             <!-- Tombol Tambah Data -->
-                            <a href="{{ url('/perusahaan/create') }}" class="btn btn-primary btn-icon-split btn-sm">
+                            <a href="{{ url('/coa/create') }}" class="btn btn-primary btn-icon-split btn-sm">
                                 <span class="icon text-white-50">
                                     <i class="ti ti-plus"></i>
                                 </span>
@@ -82,44 +83,42 @@
                                         <tr>
                                             <th>Kode</th>
                                             <th>Nama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telpon</th>
-                                            <th>Email</th>
-                                            <th>Aksi</th>
+                                            <th>Header</th>
                                         </tr>
                                     </thead>
                                     <tfoot class="thead-dark">
                                         <tr>
                                             <th>Kode</th>
                                             <th>Nama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telpon</th>
-                                            <th>Email</th>
-                                            <th>Aksi</th>
+                                            <th>Header</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                    @foreach ($perusahaan as $p)
+                                    @foreach ($coa as $p)
                                         <tr>
-                                            <td>{{ $p->kode_perusahaan }}</td>
-                                            <td>{{ $p->nama_perusahaan }}</td>
-                                            <td>{{ $p->alamat_perusahaan }}</td>
-                                            <td>{{ $p->no_telpon_perusahaan }}</td>
-                                            <td>{{ $p->email_perusahaan }}</td>
+                                            <td>{{ $p->kode_akun }}</td>
+                                            <td>{{ $p->nama_akun }}</td>
+                                            <td>{{ $p->header_akun }}</td>
                                             <td>
-                                                    <a href="{{ route('perusahaan.edit', $p->id) }}" class="btn btn-success btn-icon-split btn-sm">
+                                                    <a href="{{ route('coa.edit', $p->id) }}" class="btn btn-success btn-icon-split btn-sm">
                                                         <span class="icon text-white-50">
                                                             <i class="ti ti-check"></i>
                                                         </span>
                                                         <span class="text">Ubah</span>
                                                     </a>
 
-                                                    <a href="#" onclick="deleteConfirm(this); return false;" data-id="{{ $p->id }}" class="btn btn-danger btn-icon-split btn-sm">
-                                                        <span class="icon text-white-50">
-                                                            <i class="ti ti-minus"></i>
-                                                        </span>
-                                                        <span class="text">Hapus</span>
-                                                    </a>
+                                                    <form action="{{ route('coa.destroy', $p->id) }}" method="POST">
+                                                  @csrf
+                                                  @method('DELETE')
+                                                  <button type="submit" class="btn btn-danger btn-icon-split btn-sm">
+                                                    <span class="icon text-white-50">
+            <i class="ti ti-minus"></i>
+        </span>
+        <span class="text">Hapus</span>
+    </button>
+</form>
+
+
 
                                             </td>
                                         </tr>
@@ -145,12 +144,12 @@
                 id = e.getAttribute('data-id');
 
                 // const str = 'Hello' + id + 'World';
-                var url3 = "{{url('perusahaan/destroy/')}}";
+                var url3 = "{{url('coa/destroy/')}}";
                 var url4 = url3.concat("/",id);
                 // console.log(url4);
 
                 // console.log(id);
-                // var url = "{{url('perusahaan/destroy/"+id+"')}}";
+                // var url = "{{url('produk/destroy/"+id+"')}}";
                 
                 // url = JSON.parse(rul.replace(/"/g,'"'));
                 tomboldelete.setAttribute("href", url4); //akan meload kontroller delete
@@ -160,7 +159,8 @@
                 var res = id;
                 document.getElementById("xid").innerHTML = pesan.concat(res,pesan2);
 
-                var myModal = new bootstrap.Modal(document.getElementById('deleteModal'), {  keyboard: false });
+                var myModal = new bootstrap.Modal(document.getElementById('deleteModal'), 
+                {  keyboard: false });
                 
                 myModal.show();
             

@@ -42,7 +42,7 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">MASTER DATA</span>
+              <span class="hide-menu">Master Data</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="{{ url('produk') }}" aria-expanded="false">
@@ -74,7 +74,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{ url('coa') }}" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
@@ -111,7 +111,49 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">EXTRA</span>
+              <span class="hide-menu">LAPORAN</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-mood-happy"></i>
+                </span>
+                <span class="hide-menu">Icons</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+                <span class="hide-menu">Sample Page</span>
+              </a>
+            </li>
+
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">GRAFIK</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-mood-happy"></i>
+                </span>
+                <span class="hide-menu">Icons</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+                <span class="hide-menu">Sample Page</span>
+              </a>
+            </li>
+
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">ANALISIS DATA</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
