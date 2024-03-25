@@ -35,51 +35,51 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Masterdata</span>
+              <span class="hide-menu">Master Data</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="{{ url('produk') }}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-package"></i>
+                </span>
+                <span class="hide-menu">Produk</span>
+              </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="{{ url('pegawai') }}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-layout"></i>
+                  <i class="ti ti-id-badge"></i>
                 </span>
                 <span class="hide-menu">Pegawai</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="{{ url('coa') }}" aria-expanded="false">
+              <a class="sidebar-link" href="{{ url('perusahaan') }}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-clipboard"></i>
+                  <i class="ti ti-briefcase"></i>
                 </span>
-                <span class="hide-menu">Coa</span>
+                <span class="hide-menu">Perusahaan</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="{{ url('contohform') }}" aria-expanded="false">
+              <a class="sidebar-link" href="{{ url('supplier') }}" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">ContohForm</span>
+                <span class="hide-menu">Supplier</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{ url('coa') }}" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Forms</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-typography"></i>
-                </span>
-                <span class="hide-menu">Typography</span>
+                <span class="hide-menu">COA</span>
               </a>
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Transaksi</span>
+              <span class="hide-menu">Auth</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
